@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>表单</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <form method="POST">
+        账号：<input type="text" name="name" value="" size="10">
+        <br>
+        <br>
+        密码：<input type="password" name="mima" size="10">
+        <br>
+        <br>
+        <!--<input type="hidden" value="隐藏的内容" name="mihiddenma" size="10"> 当为<form>时，可以隐藏发送-->
+
+
+        性别<input type="radio" name="sex">男<input type="radio" name="sex">女
+        <br>
+        <br>
+        爱好<input type="checkbox" name="basketball" checked>篮球<input type="checkbox" name="football">足球
+
+        <br>
+        <br>
+        自我介绍:
+        <textarea cols="35" rows="10" name="ziwojieshao"></textarea>
+        <br>
+        <br>
+        地址：
+        <select name="dizhi">
+            <option>深圳</option>
+            <option>上海</option>
+            <option>北京</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+        <input type="button" value="按钮">
+    </form>
+</body>
+</html>
