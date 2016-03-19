@@ -1,24 +1,27 @@
 #!/usr/bin/env python
 #coding:utf-8
 #Created by Jeff on 2016/3/16 22:43
-#28、从键盘输入10个温度（代表10天的气温），计算平均温度，并且显示温度在平均温度之上的天数。
+# 31、记录商店的销售情况：
+# 键盘输入商店商品单价、数量
+# 每天销售的商品数量和单价都不完全一样
+# 最终计算，通过键盘输入的那几天的销售总额。
 
-def temperature(t):
-    averageTemperature = sum(t)/10.0
-    return averageTemperature
-def aboveAverageTemperature(t):
-    higherTemperature = 0
-    for i in t:
-        if i > temperature(t):
-            higherTemperature += 1
-    return higherTemperature
+
+class SellTrace(object):
+    sum = 0
+    def __init__(self,price, num):
+        self.price = float(price)
+        self.num = int(num)
+        SellTrace.sum += self.price * self.num
+    def amount(self):
+
+        return SellTrace.sum
 if __name__ == "__main__":
     while True:
-        t = eval(raw_input("请输入10个温度（逗号隔开）："))
-        if len(t) == 10:
+        price = raw_input("商品单价(按q退出)：")
+        if price == 'q':
             break
-        else:
-            print "输入错误"
-    print "平均温度为：",temperature(t)
-    print "平均温度之上的天数为",aboveAverageTemperature(t),"天"
+        num = raw_input("商品数量：")
+        a = SellTrace(price, num)
 
+    print "销售总额为：",a.amount()

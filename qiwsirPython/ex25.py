@@ -2,8 +2,11 @@
 #coding:utf-8
 #Created by Jeff on 2016/3/15 11:34
 import profile
-range1 = range(1, 10)
-range2 = range(0, 10)
+import datetime
+
+starttime = datetime.datetime.now()
+range1 = xrange(1, 10)
+range2 = xrange(0, 10)
 def f():
     for s in range1:
         for e in range2:
@@ -35,4 +38,7 @@ def f():
                                         print " +%d%d%d%d" % (m, o, r, e)
                                         print "------"
                                         print " %d%d%d%d%d" % (m, o, n, e, y)
+f()
+endtime = datetime.datetime.now()
+print (endtime - starttime).seconds
 profile.run("f()")

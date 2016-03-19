@@ -1,0 +1,24 @@
+/*通用样式*/
+*{margin: 0;padding:0;}
+body{font:14px/24px 'Microsoft YaHei','宋体'.'"Helvetica Neue",Helvetica,Arial,sans-serif''}
+.wp{width:960px;margin:0 auto;}
+.z{float:left;}
+.y{float:right;}
+.cl{clear:both;}
+.top{
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    background: #3c4147;
+    color:#d8d8d8;
+}
+.top span{
+margin-right: 15px;
+}
+.top a{
+    color:#d8d8d8;
+    text-decoration: none;
+}
+.top a:hover{
+    color:#f60;
+}
