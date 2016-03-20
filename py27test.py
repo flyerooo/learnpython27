@@ -1,5 +1,9 @@
 #! /usr/bin/env python
 #coding:utf-8
 
-a,b,c,d,e = raw_input("请输入参数:")
-print a,b,c,d,e
+def square(num):
+    total = num * num
+    return total
+total = 50
+number = square(20)
+print total
