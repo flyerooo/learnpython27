@@ -2,6 +2,7 @@
 #coding:utf-8
 #Created by Jeff on 2016/3/23 20:33
 
+# 40、复制文件。通过命令行参数，把第一个文件的内容复制到第二个文件。（os、sys）
 
 def copyFile(in_file, out_file):
     with open(in_file,'r') as f1:

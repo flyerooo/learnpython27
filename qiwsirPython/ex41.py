@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 #coding:utf-8
 #Created by Jeff on 2016/3/23 20:33
-
+# 41、写一段python程序，将某个文件压缩成gzip或者bzip格式，然后解压缩到指定目录。
+#
 import gzip
 
 def compress(file_in,file_out):
