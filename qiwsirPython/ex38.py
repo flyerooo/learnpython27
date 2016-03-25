@@ -38,7 +38,7 @@ if __name__ == "__main__":
                 for i in f:
                     count_lines += 1
                     if input_num >= count_lines:
-                        print count_lines,i,
+                        print (count_lines,i,)
                 print '\n',"---------------end-of-contents----------",'\n',"The full text of the number of rows:",count_lines
 
             break

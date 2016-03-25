@@ -14,9 +14,9 @@ if __name__ == "__main__":
             num = remainder(dividend,divisor)
             break
         except ValueError:
-            print "ValueError, please enter again"
+            print ("ValueError, please enter again")
         except ZeroDivisionError:
-            print "ZeroDivisionError, please enter again"
+            print ("ZeroDivisionError, please enter again")
         except:
-            print "Something wrong in the input,please enter again"
-    print dividend,' % ',divisor,' = ',num
+            print ("Something wrong in the input,please enter again")
+    print ("{} % {} = {}".format(dividend, divisor, num))
