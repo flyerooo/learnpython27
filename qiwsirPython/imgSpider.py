@@ -1,6 +1,6 @@
-#! /usr/bin/env python
-#coding:utf-8
 #!/usr/bin/env python
+#coding:utf-8
+#Created by Jeff on 2016/3/27 19:58
 
 import re
 import urllib2
