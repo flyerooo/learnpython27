@@ -10,4 +10,5 @@
 
 import subprocess
 
-p=subprocess.Popen("dir",shell=True)  #Windows
+windows_dir = subprocess.call("dir",shell=True)  #Lists the files in the current directory(Windows)
+

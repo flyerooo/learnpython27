@@ -15,3 +15,5 @@ except ValueError:
     correctDate = False
 print(str(correctDate))
 #自己判断的话，条件感觉比较多，所以参考了stackoverflow上的回答
+
+a = xrange(n)
